@@ -12,7 +12,7 @@ public class HumanPlayer extends CardPlayer {
 	}
 	
 	public boolean wantsACard() {
-		String response = JOptionPane.showInputDialog("한장 더 드릴까요? (Y/N)");
+		String response = JOptionPane.showInputDialog("�븳�옣 �뜑 �뱶由닿퉴�슂? (Y/N)");
 		return response.equals("Y") || response.equals("y");
 	}
 	
