@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-//ㅁ
+
 public class BlackjackBoard extends JPanel{
 	private Card card;
 	private CardDeck computer_deck;
