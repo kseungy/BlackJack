@@ -131,9 +131,5 @@ public class BlackjackFrame extends JFrame{
 		new BlackjackFrame();		
 	}
 	
-	
-	
-
-	 
 }
 
