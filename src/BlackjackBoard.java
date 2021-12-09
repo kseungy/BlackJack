@@ -24,6 +24,5 @@ public class BlackjackBoard extends JPanel{
 		//상황판(승자, 버스트, 블랙잭 출력판)
 		g.drawRect(400, 250, 350, 80);
 		
-	}
-	
+	}	
 }
