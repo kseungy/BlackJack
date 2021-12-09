@@ -10,8 +10,10 @@ public class BlackjackFrame extends JFrame{
 	private Card card;
 	private CardDeck deck;
 	
-	int score1 = 10;
-	int score2 = 20;
+	//업데이트 되도록 구현
+	int score1 = 0;
+	int score2 = 0;
+	int chips = 0;
 	
 	//버튼
 	JButton hitb = new JButton();
@@ -72,9 +74,26 @@ public class BlackjackFrame extends JFrame{
 		
 		JLabel L2 = new JLabel();
 		L2.setText("플레이어의 점수: "+Integer.toString(score2));
-		L2.setBounds(250, 500, 180, 50);
+		L2.setBounds(250, 450, 180, 50);
 		board.add(L2);
 		
+		//칩 갯수
+		JLabel L3 = new JLabel();
+		L3.setText("chips: " + Integer.toString(chips));
+		L3.setBounds(250, 500, 180, 50);
+		board.add(L3);
+		
+		//승자 표시 판
+		JLabel L4 = new JLabel();
+		L4.setText("Player win!");
+		L4.setBounds(550, 250, 350, 80);
+		board.add(L4);
+		/* if문으로 구현
+		 * 1. 플레이어 승
+		 * 2. 딜러 승
+		 * 3. 블랙잭 승리
+		 * 4. 서렌 
+		 */
 		
 	}
 	
@@ -105,13 +124,16 @@ public class BlackjackFrame extends JFrame{
 	public class NewGameButton implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("new game");
-
 		}
 	}
 	
 	public static void main(String[] args) {
 		new BlackjackFrame();		
 	}
+	
+	
+	
+
 	 
 }
 
