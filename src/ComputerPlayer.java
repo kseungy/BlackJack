@@ -7,8 +7,4 @@ public class ComputerPlayer extends CardPlayer {
 		super(max_cards);
 	}
 	
-	public boolean wantsACard() {
-		return super.totalScore() <= 16;
-	}
-
 }
